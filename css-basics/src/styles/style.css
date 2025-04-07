@@ -1,0 +1,73 @@
+/* Apply general styles to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with a specific ID */
+#main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#main-header:hover {
+    background-color: #444;
+}
+
+/* Style the h1 tag inside the header using a class */
+.title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #f4f4f4;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #e74c3c;
+}
+
+/* Style the content section using a class */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 10%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style a special paragraph with a class */
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.highlight:hover {
+    color: #c0392b;
+}
+
+/* Style the footer using an ID */
+#main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#main-footer:hover {
+    background-color: #444;
+}
