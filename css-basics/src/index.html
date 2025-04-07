@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Styled Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        button {
+            background: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1 class="title">Welcome to My Interactive Page</h1>
+    </header>
+
+    <nav>
+        <a href="#main-header">Home</a>
+        <a href="#content-section">About</a>
+        <a href="#main-footer">Contact</a>
+    </nav>
+
+    <section id="content-section" class="content">
+        <p>This is a paragraph styled with CSS.</p>
+        <p class="highlight">This paragraph has a special style.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message" style="display: none; margin-top: 1rem;">You clicked the button! 🎉</p>
+    </section>
+
+    <footer id="main-footer">
+        <p>Designed & Built by Kevin Samwel</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
