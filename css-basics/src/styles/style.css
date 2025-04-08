@@ -58,6 +58,35 @@ body {
     color: #c0392b;
 }
 
+/* Style for images */
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.featured-image:hover {
+    transform: scale(1.05);
+}
+
+/* Style for a container with margin, padding, and borders */
+.custom-box {
+    margin: 25px;
+    padding: 20px 30px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+/* Style for paragraphs with different font */
+p {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
 /* Style the footer using an ID */
 #main-footer {
     background-color: #333;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -41,11 +41,21 @@
         .content {
             padding: 2rem;
             text-align: center;
+            font-family: 'Georgia', serif;
         }
 
         .highlight {
             color: #4CAF50;
             font-weight: bold;
+        }
+
+        .featured-image {
+            max-width: 400px;
+            border: 3px solid #4CAF50;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
 
         button {
@@ -82,6 +92,7 @@
     </nav>
 
     <section id="content-section" class="content">
+        <img src="https://picsum.photos/400/300" alt="Featured Image" class="featured-image">
         <p>This is a paragraph styled with CSS.</p>
         <p class="highlight">This paragraph has a special style.</p>
         <button onclick="showMessage()">Click Me</button>
